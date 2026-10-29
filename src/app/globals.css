@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy: #0b1a3d;
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: #f7f8fc;
+  color: var(--color-navy);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-blue-600);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
